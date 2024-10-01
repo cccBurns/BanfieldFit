@@ -32,6 +32,80 @@
     font-family: 'Bebas Neue', sans-serif;
 }
 
+/* ----- FOOTER ----- */
+
+.footer {
+    background: url("{% static 'core/assets/img/madera.jpg' %}") no-repeat center center;
+    background-size: cover;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #ffffff;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover {
+    color: #00db42;
+    opacity: 0.5;
+}
+
+.footer ul {
+    color: #ffffff;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    color: #00db42;
+    opacity: 0.5;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #898989;
+}
+
+#arriba {
+    scroll-behavior: smooth;
+    
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 /*
@@ -146,16 +220,17 @@ p {
 .btn-1 {
     display: inline-block;
     padding: 11px 35px;
-    color: #FFFFFF; /* Texto en blanco */
+    color: #000000; /* Texto en negro */
     text-transform: uppercase;
     background-color: #00db42; /* Color verde de fondo */
     text-decoration: none; /* Quita el subrayado */
-    transition: background-color 1s, color 1s; /* Transición de 1 segundo para fondo y color */
+    font-weight: bold; /* Hace que el texto sea más grueso (negrita) */
+    transition: color 1s; /* Transición de 1 segundo solo para el color del texto */
 }
 
 .btn-1:hover {
-    background-color: #FFFFFF; /* Cambia a blanco al pasar el mouse */
-    color: #00db42; /* Cambia el color del texto a verde */
+    color: #FFFFFF; /* Cambia el color del texto a blanco al pasar el mouse */
+    background-color: #00db42; /* Mantiene el fondo verde */
 }
 
 
@@ -269,12 +344,14 @@ hr {
     padding: 30px 50px;
     text-align: center;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
+     
 }
 
 .plan-1 span {
     font-size: 40px;
     font-weight: 800;
     color: #FFFFFF;
+    
 }
 
 .plan-1 h3 {
@@ -282,11 +359,10 @@ hr {
     font-size: 25px;
     color: #FFFFFF;
     margin: 25px 0 35px 0;
-    background: linear-gradient(
-        90deg,
-        rgba(35,122,17,1) 0%,
-        rgba(102,254,32,1) 100%
-    );
+    background: #00db42;
+    border-radius: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
 }
 
 .plan-1 p {
@@ -317,6 +393,8 @@ hr {
     color: #F9FAFC;
     text-transform: uppercase;
     margin-bottom: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
 }
 
 .services-content p {

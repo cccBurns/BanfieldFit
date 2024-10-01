@@ -22,7 +22,7 @@
     
 </head>
 
-<body>
+<body id="arriba">
     <!-- Incluir el navbar -->
     {% include 'core/navbar.html' %}
     
@@ -63,75 +63,42 @@
     <section class="testimonial">
 
         <span>Banfield gym</span>
-        <h2>Nuestros Planes</h2>
+        <h2>Aranceles</h2>
 
         <div class="testimonial-content container">
 
             <div class="plan-1">
-                <span>$250</span>
-                <h3>Plan basico</h3>
+                <h3>Socio</h3>
+                <span>$15.000</span>   
+                <br>
+                <br>          
                 <p>Entrenador </p>
                 <p>Acceso 24/7</p>
-                <p>Dieta</p>
+                
             </div>
 
             <div class="plan-1">
-                <span>$450</span>
-                <h3>Plan medio</h3>
+                <h3>No socio</h3>
+                <span>$22.000</span>
+                <br>
+                <br> 
                 <p>Entrenador </p>
                 <p>Acceso 24/7</p>
-                <p>Dieta</p>
-                <p>Nutricionista</p>
+                
             </div>
 
             <div class="plan-1">
-                <span>$1200</span>
-                <h3>Plan Completo</h3>
-                <p>Entrenador </p>
-                <p>Acceso 24/7</p>
-                <p>Dieta</p>
-                <p>Nutricionista</p>
-                <p>Sauna</p>
-                <p>Pileta</p>
+                <h3>Adicional</h3>
+                <span>$500</span>      
+                <br>
+                <br>           
+                <p>Nutricionista </p>
+                <p>Kinesiologo</p>                
+                <p>Masajista</p>
+                
             </div>
         </div>
     </section>
-
-    {% comment %} <main class="plans">
-
-        <span>Banfield gym</span>
-        <h2>Nuestros planes</h2>
-        <hr>
-        <div class="plans-content container">
-            <div class="plan-1">
-                <span>$250</span>
-                <h3>Plan basico</h3>
-                <p>Entrenador </p>
-                <p>Acceso 24/7</p>
-                <p>Dieta</p>
-            </div>
-
-            <div class="plan-1">
-                <span>$450</span>
-                <h3>Plan medio</h3>
-                <p>Entrenador </p>
-                <p>Acceso 24/7</p>
-                <p>Dieta</p>
-                <p>Nutricionista</p>
-            </div>
-
-            <div class="plan-1">
-                <span>$1200</span>
-                <h3>Plan Completo</h3>
-                <p>Entrenador </p>
-                <p>Acceso 24/7</p>
-                <p>Dieta</p>
-                <p>Nutricionista</p>
-                <p>Sauna</p>
-                <p>Pileta</p>
-            </div>
-        </div>
-    </main> {% endcomment %}
 
     <section class="information">
 
@@ -167,56 +134,6 @@
                 <a href="#" class="btn-1">Informacion</a>
             </div>
         </div>
-
-        <!-- <div class="information-content">
-            <div class="information-txt">
-                <span>Banfield gym</span>
-                <h2>Calcula tu masa muscular</h2>
-                <hr>
-                <form>
-                    <input type="text" placeholder="Peso">
-                    <input type="text" placeholder="Altura">
-                    <a href="#" class="btn-1">Calcular</a>
-                </form>
-            </div>
-
-            <div class="information-img">
-                <img src="img/f1.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="information-content">
-            <div class="information-img">
-                <img src="img/f2.jpg" alt="">
-            </div>
-            <div class="information-txt">
-                <span>Banfield gym</span>
-                <h2>Nuestros servicios</h2>
-                <hr>
-
-                <div class="service">
-                    <img src="img/i1.svg" alt="">
-                    <h3>
-                        Lorem ipsum dolor sit amet consectetur adipis
-                    </h3>
-                </div>
-
-                <div class="service">
-                    <img src="img/i2.svg" alt="">
-                    <h3>
-                        Lorem ipsum dolor sit amet consectetur adipis
-                    </h3>
-                </div>
-
-                <div class="service">
-                    <img src="img/i3.svg" alt="">
-                    <h3>
-                        Lorem ipsum dolor sit amet consectetur adipis
-                    </h3>
-                </div>
-            </div>
-        </div> -->
-    </section>
 
     <section class="blog">
         <span>Banfield gym</span>
@@ -277,51 +194,10 @@
         </div>
 
     </section>
-
-    <footer class="footer">
-        <div class="footer-content container">
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                </ul>
-            </div>
-
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                </ul>
-            </div>
-
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                </ul>
-            </div>
-
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                </ul>
-            </div>
-
-        </div>
-    </footer>
+    <section>
+        <!-- Incluir el footer -->
+        {% include 'core/footer.html' %}
+    </section>
 
     <script src={% static "js/scripts.js" %}></script>
     <script src={% static "js/scripts.js" %}></script>

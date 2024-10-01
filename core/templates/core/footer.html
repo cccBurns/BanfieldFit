@@ -1,0 +1,29 @@
+{% load static %}
+
+<footer class="footer">        
+    <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    
+    <ul>
+        <li>
+            <a href="#arriba">Home</a>
+        </li>
+        <li>
+            <a href="{% url 'planes' %}">Planes</a>
+        </li>
+        <li>
+            <a href="{% url 'horarios' %}">Horarios</a>
+        </li>
+        <li>
+            <a href="{% url 'contacto' %}">Contacto</a>
+        </li>
+    </ul>
+    
+    <p class="copyright">
+        Banfield Gym Argentina 2023 ® todos los derechos reservados
+    </p>
+</footer>
