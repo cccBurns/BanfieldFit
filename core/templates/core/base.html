@@ -27,30 +27,10 @@
     {% include 'core/navbar.html' %}
     
     <header class="header">
-
-        {% comment %} <div class="menu container">
-            <a href="#" class="logo">Logo</a>
-            <input type="checkbox" id="menu" />
-            <label for="menu">
-                <img src="img/menu.png" class="menu-icono" alt="menu">
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>                    
-                </ul>
-            </nav>
-        </div> {% endcomment %}
-
         <div class="header-content container">
             <div class="header-txt">
-                <h1>Banfield gym</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Non unde corrupti modi debitis,
-                    maxime ipsum dignissimos illum temporibus quo assumenda praesentium
-                    ex consequatur dolorem accusamus hic eveniet repudiandae et voluptate.
+                <h1>Banfield <span class="text-white">gym</span></h1>
+                <p>Centro de entrenamiento
                 </p>
                 <a href="#" class="btn-1">Informacion</a>
             </div>
@@ -75,39 +55,49 @@
                 </p>
                 </div>
                 <div class="about-img">
-                    <img src="img/e1.jpg" alt="">
-                </div>           
+                    <img src="/static/core/assets/img/e1.jpg" alt="">
+                </div>                   
         </div>
     </section>
 
     <section class="testimonial">
 
         <span>Banfield gym</span>
-        <h2>Testimonios</h2>
+        <h2>Nuestros Planes</h2>
 
         <div class="testimonial-content container">
 
-            <div class="testimonial-1">
-                <img class="face" src="img/t1.jpg" alt="">
-                <h4>lorem impsum</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.     
-                </p>
-                <img class="start" src="img/starts.png" alt="">
+            <div class="plan-1">
+                <span>$250</span>
+                <h3>Plan basico</h3>
+                <p>Entrenador </p>
+                <p>Acceso 24/7</p>
+                <p>Dieta</p>
             </div>
 
-            <div class="testimonial-1">
-                <img class="face" src="img/t2.jpg" alt="">
-                <h4>lorem impsum</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.                    
-                </p>
-                <img class="start" src="img/starts.png" alt="">
+            <div class="plan-1">
+                <span>$450</span>
+                <h3>Plan medio</h3>
+                <p>Entrenador </p>
+                <p>Acceso 24/7</p>
+                <p>Dieta</p>
+                <p>Nutricionista</p>
+            </div>
+
+            <div class="plan-1">
+                <span>$1200</span>
+                <h3>Plan Completo</h3>
+                <p>Entrenador </p>
+                <p>Acceso 24/7</p>
+                <p>Dieta</p>
+                <p>Nutricionista</p>
+                <p>Sauna</p>
+                <p>Pileta</p>
             </div>
         </div>
     </section>
 
-    <main class="plans">
+    {% comment %} <main class="plans">
 
         <span>Banfield gym</span>
         <h2>Nuestros planes</h2>
@@ -141,7 +131,7 @@
                 <p>Pileta</p>
             </div>
         </div>
-    </main>
+    </main> {% endcomment %}
 
     <section class="information">
 
@@ -151,21 +141,21 @@
                 <div class="services-group">
     
                     <div class="services-1">
-                        <img src="img/i1.svg" alt="">
+                        <img src="/static/core/assets/img/i1.svg" alt="">
                         <h3>
                             Crossfit
                         </h3>
                     </div>
     
                     <div class="services-1">
-                        <img src="img/i2.svg" alt="">
+                        <img src="/static/core/assets/img/i2.svg" alt="">
                         <h3>
                             Musculacion
                         </h3>
                     </div>
     
                     <div class="services-1">
-                        <img src="img/i3.svg" alt="">
+                        <img src="/static/core/assets/img/i3.svg" alt="">
                         <h3>
                             Localizada
                         </h3>
