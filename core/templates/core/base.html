@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="entrenamiento funcional, Zona sur, gym, Lomas de zamora, vida sana, entrenamiento al aire libre" >
+    <meta name="description" content="Somos lideres en entrenamiento funcional en la zona sur del conurbano de la provincia de Bs As.">
+
+    {% block title_head %}
+    <title>Base</title>
+    {% endblock title_head %}
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'img/logo1.jpeg' %}" type="image/x-icon">
+    
+</head>
+
+<body>
+    <!-- Incluir el navbar -->
+    {% include 'core/navbar.html' %}
+    
+    <header class="header">
+
+        {% comment %} <div class="menu container">
+            <a href="#" class="logo">Logo</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>                    
+                </ul>
+            </nav>
+        </div> {% endcomment %}
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Banfield gym</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Non unde corrupti modi debitis,
+                    maxime ipsum dignissimos illum temporibus quo assumenda praesentium
+                    ex consequatur dolorem accusamus hic eveniet repudiandae et voluptate.
+                </p>
+                <a href="#" class="btn-1">Informacion</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="about-content container">            
+            <div class="about-txt">
+                <span>Banfield gym</span>
+                <h2>Bienvenido con nosotros</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Non unde corrupti modi debitis,
+                    maxime ipsum dignissimos illum temporibus quo assumenda praesentium
+                    ex consequatur dolorem accusamus hic eveniet repudiandae et voluptate.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Non unde corrupti modi debitis,
+                    maxime ipsum dignissimos illum temporibus quo assumenda praesentium
+                    ex consequatur dolorem accusamus hic eveniet repudiandae et voluptate.
+                </p>
+                </div>
+                <div class="about-img">
+                    <img src="img/e1.jpg" alt="">
+                </div>           
+        </div>
+    </section>
+
+    <section class="testimonial">
+
+        <span>Banfield gym</span>
+        <h2>Testimonios</h2>
+
+        <div class="testimonial-content container">
+
+            <div class="testimonial-1">
+                <img class="face" src="img/t1.jpg" alt="">
+                <h4>lorem impsum</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.     
+                </p>
+                <img class="start" src="img/starts.png" alt="">
+            </div>
+
+            <div class="testimonial-1">
+                <img class="face" src="img/t2.jpg" alt="">
+                <h4>lorem impsum</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.                    
+                </p>
+                <img class="start" src="img/starts.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <main class="plans">
+
+        <span>Banfield gym</span>
+        <h2>Nuestros planes</h2>
+        <hr>
+        <div class="plans-content container">
+            <div class="plan-1">
+                <span>$250</span>
+                <h3>Plan basico</h3>
+                <p>Entrenador </p>
+                <p>Acceso 24/7</p>
+                <p>Dieta</p>
+            </div>
+
+            <div class="plan-1">
+                <span>$450</span>
+                <h3>Plan medio</h3>
+                <p>Entrenador </p>
+                <p>Acceso 24/7</p>
+                <p>Dieta</p>
+                <p>Nutricionista</p>
+            </div>
+
+            <div class="plan-1">
+                <span>$1200</span>
+                <h3>Plan Completo</h3>
+                <p>Entrenador </p>
+                <p>Acceso 24/7</p>
+                <p>Dieta</p>
+                <p>Nutricionista</p>
+                <p>Sauna</p>
+                <p>Pileta</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="information">
+
+        <div class="services">
+            <div class="services-content container">
+                <h2>Servicios</h2>
+                <div class="services-group">
+    
+                    <div class="services-1">
+                        <img src="img/i1.svg" alt="">
+                        <h3>
+                            Crossfit
+                        </h3>
+                    </div>
+    
+                    <div class="services-1">
+                        <img src="img/i2.svg" alt="">
+                        <h3>
+                            Musculacion
+                        </h3>
+                    </div>
+    
+                    <div class="services-1">
+                        <img src="img/i3.svg" alt="">
+                        <h3>
+                            Localizada
+                        </h3>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, neque incidunt quo ex molestiae suscipit ab! Saepe eius quasi excepturi possimus suscipit! Quisquam blanditiis molestiae aliquid ab dolorum debitis ipsum!
+                </p>
+                <a href="#" class="btn-1">Informacion</a>
+            </div>
+        </div>
+
+        <!-- <div class="information-content">
+            <div class="information-txt">
+                <span>Banfield gym</span>
+                <h2>Calcula tu masa muscular</h2>
+                <hr>
+                <form>
+                    <input type="text" placeholder="Peso">
+                    <input type="text" placeholder="Altura">
+                    <a href="#" class="btn-1">Calcular</a>
+                </form>
+            </div>
+
+            <div class="information-img">
+                <img src="img/f1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="information-content">
+            <div class="information-img">
+                <img src="img/f2.jpg" alt="">
+            </div>
+            <div class="information-txt">
+                <span>Banfield gym</span>
+                <h2>Nuestros servicios</h2>
+                <hr>
+
+                <div class="service">
+                    <img src="img/i1.svg" alt="">
+                    <h3>
+                        Lorem ipsum dolor sit amet consectetur adipis
+                    </h3>
+                </div>
+
+                <div class="service">
+                    <img src="img/i2.svg" alt="">
+                    <h3>
+                        Lorem ipsum dolor sit amet consectetur adipis
+                    </h3>
+                </div>
+
+                <div class="service">
+                    <img src="img/i3.svg" alt="">
+                    <h3>
+                        Lorem ipsum dolor sit amet consectetur adipis
+                    </h3>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <section class="blog">
+        <span>Banfield gym</span>
+        <h2>nuestras Noticias</h2>
+
+        <div class="blog-content container">
+
+            <div class="blog-1">
+                <img src="img/b1.jpg" alt="">
+                <div class="blog-txt">
+                    <span>Entrenamiento Funcional</span>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Ducimus nihil unde, eaque quae sint quas reiciendis?
+                          Autem culpa maiores omnis! Quidem veritatis unde adipisci fugit reiciendis
+                           id illum error deserunt.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="blog-1">
+                <img src="img/b2.jpg" alt="">
+                <div class="blog-txt">
+                    <span>Crossfit</span>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Ducimus nihil unde, eaque quae sint quas reiciendis?
+                          Autem culpa maiores omnis! Quidem veritatis unde adipisci fugit reiciendis
+                           id illum error deserunt.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="blog-1">
+                <img src="img/b3.jpg" alt="">
+                <div class="blog-txt">
+                    <span>Entrenamiento Militar</span>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Ducimus nihil unde, eaque quae sint quas reiciendis?
+                          Autem culpa maiores omnis! Quidem veritatis unde adipisci fugit reiciendis
+                           id illum error deserunt.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact-content">
+            <span>Banfield gym</span>
+            <h2>5552600</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint,</p>
+            <a href="#" class="btn-1">Informacion</a>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src={% static "js/scripts.js" %}></script>
+    <script src={% static "js/scripts.js" %}></script>
+    <script src="https://kit.fontawesome.com/96269ff2ef.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
