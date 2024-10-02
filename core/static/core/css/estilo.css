@@ -35,11 +35,12 @@
 /* ----- FOOTER ----- */
 
 .footer {
-    background: url("{% static 'core/assets/img/madera.jpg' %}") no-repeat center center;
+    background-color: #000000;
     background-size: cover;
     padding: 40px 0;
     color: white;
     text-align: center;
+    min-height: 200px;
 }
 
 .footer .social {
@@ -50,7 +51,7 @@
 
 .footer .social a {
     font-size: 24px;
-    color: inherit;
+    color: #fff;
     border: 1px solid #ffffff;
     width: 40px;
     height: 40px;
@@ -59,12 +60,12 @@
     text-align: center;
     border-radius: 50%;
     margin: 0 8px;
-    opacity: 0.75;
+    
 }
 
 .footer .social a:hover {
     color: #00db42;
-    opacity: 0.5;
+    
 }
 
 .footer ul {
@@ -79,9 +80,9 @@
 }
 
 .footer ul li a {
-    color: inherit;
+    color: #fff;
     text-decoration: none;
-    opacity: 0.8;
+    
 }
 
 .footer ul li {
@@ -91,7 +92,7 @@
 
 .footer ul li a:hover {
     color: #00db42;
-    opacity: 0.5;
+    
 }
 
 .footer .copyright {
@@ -105,6 +106,8 @@
     scroll-behavior: smooth;
     
 }
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
 
@@ -525,8 +528,8 @@ input {
 }
 
 .footer {
-    padding: 100px 0;
-    background-color: #191A1F;
+    padding: 80px 0;
+    background-color: #000000;
 }
 
 .footer-content {
