@@ -1,3 +1,17 @@
+.header {
+    background: linear-gradient(
+        rgba(29,30,35,0.8),
+        rgba(29,30,35,0.8)
+    ),
+    url("/static/core/assets/img/bg.jpg") no-repeat center center;
+    min-height: 100vh; /* El header ahora ocupa toda la pantalla */
+    padding: 100px 30px; 
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
 #navbar-logo {
     color: #00db42; /* Cambia el color a verde */    
     font-size: 30px; /* Ajusta el tamaño de la fuente según lo necesites */
@@ -14,7 +28,8 @@
 
 .navbar-nav .nav-link {
     font-size: 18px;
-    font-weight: bold; /* Aplica negrita */
+   /*  font-weight: bold; */
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar-nav .nav-link:hover {
@@ -137,20 +152,7 @@ img {
     margin: 0 auto;
 }
 
-.header {
-    background: linear-gradient(
-        rgba(29,30,35,0.8),
-        rgba(29,30,35,0.8)
-    ),
-    url("/static/core/assets/img/bg.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    min-height: 80vh;
-    padding: 80px 0 0 0;
-}
+
 
 .menu {
     position: absolute;
@@ -251,6 +253,7 @@ p {
 .about-txt {
     flex-basis: 50%;
     padding-right: 35px;
+    font-family: 'Verdana', sans-serif;
 }
 
 span {
@@ -589,7 +592,7 @@ input {
 
     #menu:checked ~ .navbar {
         display: initial;
-    }
+    }   
 
     .header {
         min-height: 0vh;
