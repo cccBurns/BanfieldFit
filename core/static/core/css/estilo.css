@@ -1,3 +1,31 @@
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px; /* Ajusta el tamaño según tus necesidades */
+    color: #ffffff; /* Cambia el color si lo necesitas */
+    text-align: center; /* Centra el texto si lo prefieres */
+}
+
+.blog-content {
+    margin-top: 50px;
+}
+
+.blog-1 {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.blog-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.blog-txt {
+    margin-top: 10px;
+}
+
 .header {
     background: linear-gradient(
         rgba(29,30,35,0.8),
@@ -253,11 +281,12 @@ p {
 .about-txt {
     flex-basis: 50%;
     padding-right: 35px;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 span {
-    font-size: 14px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
     text-transform: uppercase;
     color: #4ff549;
 }
@@ -284,9 +313,13 @@ hr {
 }
 
 .testimonial {
+    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
     padding: 100px 0;
     background-color: #191A1F;
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Alineación vertical del contenido */
+    justify-content: center; /* Centra el contenido verticalmente */
 }
 
 .testimonial-content {
