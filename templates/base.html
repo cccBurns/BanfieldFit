@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,7 +10,7 @@
     <meta name="description" content="Somos lideres en entrenamiento funcional en la zona sur del conurbano de la provincia de Bs As.">
 
     {% block title_head %}
-    <title>Base</title>
+    <title>Banfield Gym</title>
     {% endblock title_head %}
 
     <!-- Bootstrap CSS -->
@@ -19,9 +20,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="{% static 'img/logo1.jpeg' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'core/assets/img/favicon.ico' %}" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Pacifico&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="{% static 'core/assets/css/estilo.js' %}">
 </head>
 
 <body id="arriba">
@@ -36,27 +38,11 @@
                 {% comment %} <a href="#" class="btn-1">Informacion</a>  {% endcomment %}
             </div>
         </div>
-    </header>
-
-    <section class="about" id="about">
-        <div class="about-content container">            
-            <div class="about-txt">
-                <span>Banfield gym</span>
-                <h2>About Us</h2>
-                <hr>
-                <p>Ubicado en la sede del histórico Club Banfield, nuestro gimnasio es mucho más que un simple lugar para entrenar: es un centro de entrenamiento de alto rendimiento. Nos especializamos en brindar programas de entrenamiento diseñados para mejorar la fuerza, el equilibrio, la potencia y la hipertrofia muscular, además de enfocarnos en la quema de grasa.</p>
-                <p>Con un equipo de entrenadores profesionales altamente capacitados, ofrecemos rutinas personalizadas que te ayudarán a alcanzar tus objetivos, ya seas un atleta experimentado o alguien que recién comienza su camino hacia un estilo de vida más saludable.</p>
-                <p>Nuestras instalaciones modernas están completamente equipadas para cubrir todas tus necesidades, desde el entrenamiento funcional hasta el levantamiento de pesas. En el corazón de Banfield, nos enorgullece ser un espacio donde la comunidad se une para mejorar su rendimiento físico en un ambiente motivador y acogedor.</p>    
-                </div>
-                <div class="about-img">
-                    <img src="/static/core/assets/img/gimnasio1.jpg" alt="">
-                </div>                   
-        </div>
-    </section>
+    </header>    
 
     <section class="testimonial" id="horario">
 
-        <span>Banfield gym</span>
+        <span>Banfield <span class="gym">gym</span></span>
         <h2> <strong>Horarios:</strong> </h2>
         <h2>Lun a Vier: 7:30hs a 22hs</h2>
         <h2>Sabados: 9hs a 20hs</h2>
@@ -135,7 +121,7 @@
         
 
     <section class="blog">
-        <span>Banfield gym</span>
+        <span>Banfield <span class="gym">gym</span></span>
         <h2>nuestras Noticias</h2>
 
         <div class="blog-content container">
@@ -186,7 +172,7 @@
 
     <section class="contact">
         <div class="contact-content">
-            <span>Banfield gym</span>
+            <span>Banfield <span class="gym">gym</span></span>
             <h2>5552600</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint,</p>
             <a href="#" class="btn-1">Informacion</a>
@@ -198,8 +184,7 @@
         {% include 'core/footer.html' %}
     </section>
 
-    <script src={% static "js/scripts.js" %}></script>
-    <script src={% static "js/scripts.js" %}></script>
+    <script src={% static "core/assets/js/scripts.js" %}></script>    
     <script src="https://kit.fontawesome.com/96269ff2ef.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>

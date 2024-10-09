@@ -1,3 +1,8 @@
+.gym {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffffff; /* Blanco */
+    font-size: 20px; /* Ajusta el tamaño según lo que desees */
+}
 
 .titulo {
     font-family: 'Poppins', sans-serif;
@@ -732,3 +737,4 @@ input {
 
 
 }
+
