@@ -6,7 +6,7 @@
         rgba(29,30,35,0.9),
         rgba(29,30,35,0.9)
     ),
-    url("/static/core/assets/img/bg.jpg") no-repeat center center;
+    url("/static/core/assets/img/descanso.jpg") no-repeat center center;
     background-size: cover; /* Asegura que la imagen de fondo cubra toda la sección */
     display: flex;
     flex-direction: column;
@@ -374,7 +374,7 @@ p {
         rgba(29,30,35,0.9),
         rgba(29,30,35,0.9)
     ),
-    url("/static/core/assets/img/bg.jpg") no-repeat center center;
+    url("/static/core/assets/img/sede.jpg") no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -464,13 +464,20 @@ hr {
 }
 
 .testimonial {
-    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
     padding: 100px 0;
-    background-color: #191A1F;
-    text-align: center;
+    background-color: #24272E;
+    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+    background: linear-gradient(
+        rgba(29,30,35,0.9),
+        rgba(29,30,35,0.9)
+    ),
+    url("/static/core/assets/img/hora2.jpg") no-repeat center center;
+    background-size: cover; /* Asegura que la imagen de fondo cubra toda la sección */
     display: flex;
-    flex-direction: column; /* Alineación vertical del contenido */
-    justify-content: center; /* Centra el contenido verticalmente */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centra el texto dentro de los elementos */
 }
 
 .testimonial-content {
@@ -529,7 +536,10 @@ hr {
 }
 
 .plan-1 {
-    flex-basis: calc(33.3% - 20px);
+    flex-basis: calc(33.33% - 20px);
+    background-color: rgba(36, 39, 46, 0.9);    
+    margin: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     border: 1 solid #51515179;
     padding: 30px 50px;
     text-align: center;
