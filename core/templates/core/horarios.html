@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% include 'core/navbar.html' %}
+
+{% block section %}
+<section class="testimonial" id="horario">
+            
+    <span>Banfield <span class="gym">gym</span></span>
+    <h2> <strong>Horarios:</strong> </h2>
+    <h2>Lun a Vier: 7:30hs a 22hs</h2>
+    <h2>Sabados: 9hs a 20hs</h2>
+    <h2> <strong>Aranceles:</strong> </h2>
+
+<div class="testimonial-content container">
+
+    <div class="plan-1">
+        <h3>Socio</h3>
+        <span>$15.000</span>   
+        <br>
+        <br>          
+        <p>Entrenador </p>
+        <p>Acceso 24/7</p>
+        
+    </div>
+
+    <div class="plan-1">
+        <h3>No socio</h3>
+        <span>$22.000</span>
+        <br>
+        <br> 
+        <p>Entrenador </p>
+        <p>Acceso 24/7</p>
+        
+    </div>
+
+    <div class="plan-1">
+        <h3>Adicional</h3>
+        <span>$5000</span>      
+        <br>
+        <br>           
+        <p>Nutricionista </p>
+        <p>Kinesiologo</p>                
+        <p>Masajista</p>
+        
+    </div>
+</div>
+</section>
+{% endblock section %}

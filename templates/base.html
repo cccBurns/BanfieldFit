@@ -29,160 +29,42 @@
 <body id="arriba">
     <!-- Incluir el navbar -->
     {% include 'core/navbar.html' %}
-    
-    <header class="header">
-        <div class="header-content container">
-            <div class="header-txt">
-                <h1>Banfield <span class="text-white">gym</span></h1>
-                <p class="titulo">Centro de entrenamiento</p>
-                {% comment %} <a href="#" class="btn-1">Informacion</a>  {% endcomment %}
-            </div>
+
+    {% block header %}       
+    {% endblock header %}
+
+    {% block section %}
+    {% endblock section %}
+
+    <footer class="footer">        
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
         </div>
-    </header>    
-
-    <section class="testimonial" id="horario">
-
-        <span>Banfield <span class="gym">gym</span></span>
-        <h2> <strong>Horarios:</strong> </h2>
-        <h2>Lun a Vier: 7:30hs a 22hs</h2>
-        <h2>Sabados: 9hs a 20hs</h2>
-        <h2> <strong>Aranceles:</strong> </h2>
-
-        <div class="testimonial-content container">
-
-            <div class="plan-1">
-                <h3>Socio</h3>
-                <span>$15.000</span>   
-                <br>
-                <br>          
-                <p>Entrenador </p>
-                <p>Acceso 24/7</p>
-                
-            </div>
-
-            <div class="plan-1">
-                <h3>No socio</h3>
-                <span>$22.000</span>
-                <br>
-                <br> 
-                <p>Entrenador </p>
-                <p>Acceso 24/7</p>
-                
-            </div>
-
-            <div class="plan-1">
-                <h3>Adicional</h3>
-                <span>$5000</span>      
-                <br>
-                <br>           
-                <p>Nutricionista </p>
-                <p>Kinesiologo</p>                
-                <p>Masajista</p>
-                
-            </div>
-        </div>
-    </section>
-
-    <section class="information">
-
-        <div class="services">
-            <div class="services-content container">
-                <h2>Servicios</h2>
-                <div class="services-group">
-    
-                    <div class="services-1">
-                        <img src="/static/core/assets/img/i1.svg" alt="">
-                        <h3>
-                            Crossfit
-                        </h3>
-                    </div>
-    
-                    <div class="services-1">
-                        <img src="/static/core/assets/img/i2.svg" alt="">
-                        <h3>
-                            Musculacion
-                        </h3>
-                    </div>
-    
-                    <div class="services-1">
-                        <img src="/static/core/assets/img/i3.svg" alt="">
-                        <h3>
-                            Localizada
-                        </h3>
-                    </div>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, neque incidunt quo ex molestiae suscipit ab! Saepe eius quasi excepturi possimus suscipit! Quisquam blanditiis molestiae aliquid ab dolorum debitis ipsum!
-                </p>
-                <a href="#" class="btn-1">Informacion</a>
-            </div>
-        </div>
-
         
-
-    <section class="blog">
-        <span>Banfield <span class="gym">gym</span></span>
-        <h2>nuestras Noticias</h2>
-
-        <div class="blog-content container">
-
-            <div class="blog-1">
-                <img src="/static/core/assets/img/b1.jpg" alt="">
-                <div class="blog-txt">
-                    <span>Entrenamiento Funcional</span>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Ducimus nihil unde, eaque quae sint quas reiciendis?
-                          Autem culpa maiores omnis! Quidem veritatis unde adipisci fugit reiciendis
-                           id illum error deserunt.
-                    </p>
-
-                </div>
-            </div>
-
-            <div class="blog-1">
-                <img src="/static/core/assets/img/b2.jpg" alt="">
-                <div class="blog-txt">
-                    <span>Crossfit</span>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Ducimus nihil unde, eaque quae sint quas reiciendis?
-                          Autem culpa maiores omnis! Quidem veritatis unde adipisci fugit reiciendis
-                           id illum error deserunt.
-                    </p>
-
-                </div>
-            </div>
-
-            <div class="blog-1">
-                <img src="/static/core/assets/img/b3.jpg" alt="">
-                <div class="blog-txt">
-                    <span>Entrenamiento Militar</span>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Ducimus nihil unde, eaque quae sint quas reiciendis?
-                          Autem culpa maiores omnis! Quidem veritatis unde adipisci fugit reiciendis
-                           id illum error deserunt.
-                    </p>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="contact-content">
-            <span>Banfield <span class="gym">gym</span></span>
-            <h2>5552600</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint,</p>
-            <a href="#" class="btn-1">Informacion</a>
-        </div>
-
-    </section>
-    <section>
-        <!-- Incluir el footer -->
-        {% include 'core/footer.html' %}
-    </section>
+        <ul>
+            <li>
+                <a href="#arriba">Home</a>
+            </li>
+            <li>
+                <a href="{% url 'planes' %}">Planes</a>
+            </li>
+            <li>
+                <a href="{% url 'horarios' %}">Horarios</a>
+            </li>
+            <li>
+                <a href="{% url 'contacto' %}">Contacto</a>
+            </li>
+        </ul>
+        
+        <p class="copyright">
+            Banfield Gym Argentina 2023 ® todos los derechos reservados
+        </p>
+    </footer>
+    
+    
 
     <script src={% static "core/assets/js/scripts.js" %}></script>    
     <script src="https://kit.fontawesome.com/96269ff2ef.js" crossorigin="anonymous"></script>
