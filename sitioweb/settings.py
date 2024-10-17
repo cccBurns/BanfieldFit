@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 import os
 from pathlib import Path
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-ic&*c#nmu4xn-xz=0f3-ds=xr(_zh$0-race9ruwh!yb%#gcea')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG=False
+DEBUG = False
 
 ALLOWED_HOSTS = ['banfieldfit-7.onrender.com', 'localhost', '127.0.0.1']
 
@@ -76,15 +75,9 @@ WSGI_APPLICATION = 'sitioweb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '<nombre_base_de_datos>',
-        'USER': '<usuario>',
-        'PASSWORD': '<contraseña>',
-        'HOST': '<host>',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.dummy',  # Este es un motor "dummy" para que Django no intente conectar a una base de datos.
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -125,6 +118,9 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
+
+# Whitenoise configuration
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
