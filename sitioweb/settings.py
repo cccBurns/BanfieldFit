@@ -25,7 +25,12 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-ic&*c#nmu4xn-x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
+ALLOWED_HOSTS = [
+    'banfieldfit-7.onrender.com',  # Dominio de producción
+    'localhost',  # Para pruebas locales
+    '127.0.0.1',  # Para pruebas locales
+]
+
 
 # Application definition
 
