@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-ic&*c#nmu4xn-x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG=False
 
-ALLOWED_HOSTS = ['*.glitch.me']
+ALLOWED_HOSTS = ['banfieldfit-7.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
