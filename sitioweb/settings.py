@@ -23,14 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-ic&*c#nmu4xn-xz=0f3-ds=xr(_zh$0-race9ruwh!yb%#gcea')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+DEBUG=False
 
-ALLOWED_HOSTS = [
-    'banfieldfit-7.onrender.com',  # Dominio de producción
-    'localhost',  # Para pruebas locales
-    '127.0.0.1',  # Para pruebas locales
-]
-
+ALLOWED_HOSTS = ['*.glitch.me']
 
 # Application definition
 
@@ -80,8 +75,16 @@ WSGI_APPLICATION = 'sitioweb.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': '<nombre_base_de_datos>',
+        'USER': '<usuario>',
+        'PASSWORD': '<contraseña>',
+        'HOST': '<host>',
+        'PORT': '5432',
+    }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
