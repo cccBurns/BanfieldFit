@@ -246,6 +246,15 @@ textarea {
     color: #898989;
 }
 
+/* Espaciado uniforme */
+.footer .social {
+    margin-bottom: 20px; /* Espacio entre social y el resto del contenido */
+}
+
+.footer .copyright {
+    margin-top: 20px; /* Espacio entre el contenido y el copyright */
+}
+
 #arriba {
     scroll-behavior: smooth;
     
